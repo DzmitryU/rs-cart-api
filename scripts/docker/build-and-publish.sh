@@ -13,7 +13,7 @@ DOCKER_LATEST_TAG=latest
 # Logout from Docker
 docker logout $AWS_DOCKER_REGISTRY_URL
 # Login in AWS container registry with your AWS credentials
-aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 142200496662.dkr.ecr.eu-west-1.amazonaws.com
+aws ecr get-login-password --profile $PROFILE --region $REGION | docker login --username AWS --password-stdin $AWS_DOCKER_REGISTRY_URL
 # Build Docker image
 docker build \
             -f "$(dirname "$0")/../../Dockerfiles/Dockerfile" \
