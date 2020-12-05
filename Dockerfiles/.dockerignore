@@ -1,0 +1,3 @@
+# We will build ts and install dependencies inside of container
+dist
+node_modules
