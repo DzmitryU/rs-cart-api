@@ -1,0 +1,23 @@
+README.md
+
+# We will build ts and install dependencies inside of container
+dist
+node_modules
+
+# Script for deployment
+scripts
+.elasticbeanstalk
+
+
+# Docker configuration files
+Dockerfiles
+Dockerrun.aws.json
+
+# Dev files
+.prettierrc
+.gitignore
+.eslintrc.js
+test
+
+# IDE config
+.idea
